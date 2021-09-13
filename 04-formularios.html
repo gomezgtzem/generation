@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <!--
+        form es la etiqueta con la que se tratan los formularios
+        action se refiere a la accion que se realizara
+        method se refiere al metodo HTTP con el que se tratara la peticion del formulario
+        <form action="post" method="GET">
+        GET es el metodo por defecto
+    -->
+    <form method="post">
+        <!--    <input> se utiliza para las cajas de texto de donde vamos a recibir informacion del usuario
+                tambien se puede utilizar para mostrar instrucciones o valores, pero su principal uso
+                es recibir informacion del usuario
+                para poder mostrar informacion del uso del inputs se utilizara la etiqueta 
+                <label>
+                dentro de la etiqueta <input> nos podremos referir a uno en especifico con la etiqueta
+                name o id
+        -->
+        <p>
+            <label for="name"> Nombre</label>
+            <input type="text" name="name"/>
+        </p>
+        <p>
+            <label for="email"> Correo electronico</label>
+            <input type="" name="email"/>
+        </p>
+        <p>
+            <label for="password"> Contraseña</label>
+            <input type="password" name="password"/>
+        </p>
+        <!-- <textarea> nos permite recibir comentarios grandes -->
+        <p>
+            <label for="box-comment">Publicacion</label>
+            <textarea name="box-comment" id="" cols="30" rows="10"></textarea>
+        </p>
+        <!--<select> nos ofrece una lista de opciones a elegir
+            Estas opciones se delimitan con la etiqueta <option>
+        -->
+        <p>
+            <label for="color">Color favorito</label>
+            <select name="color">
+                <option value="1">Rojo</option>
+                <option value="2">Verde</option>
+                <option value="3">Azul</option>
+            </select>
+        </p>
+        <p>
+            <label for="age">Selecciona tu rango de edad</label><br/>
+            <label for="">De 18 años a 22</label>
+            <input type="radio" name=""/>
+            <label for="">De 23 años a 28</label>
+            <input type="radio" name=""/>
+            <label for="">De 29 años a 59</label>
+            <input type="radio" name=""/>
+        </p>
+        <!--La manera antigüa de guardar datos era con submit
+            <input type="submit" value="Guardar datos"/> 
+            Actualmente se hace  con button de la siguiente forma
+        -->
+        <button type="submit">Guardar datos</button>
+    </form>
+</body>
+</html>

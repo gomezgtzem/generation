@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Imágenes, Tablas y Formularios</title>
+</head>
+
+<body>
+    <h1>Imágenes, Tablas y Formularios</h1>
+    <h3>Imágenes</h3>
+    <!-- en src debemos indicar la fuente de la imagen 
+        en alt debe ir una descripcion de la imagen 
+        en title le podemos agregar titulo y al pasar el mouse por encima nos mostrara ese titulo
+        widht y height son el ancho y alto respectivamente
+    -->
+    <img src="https://m.media-amazon.com/images/I/61TMDIj38XL._AC_SX425_.jpg" alt="Stitch" title="Stitch" width="200"
+        height="300">
+    <img src="./img/squidward01.gif" alt="Squidward at work" title="Squidward at work" width="200" height="200">
+    <hr />
+
+    <!-- table es una propiedad para iniciar una estructura de tabla
+        tr "table row" nos define el inicio de una fila
+        td "table data" es donde ponemos la informacion que llevara la celda
+    -->
+    <table border="1">
+        <tr>
+            <td>Horario</td>
+            <td>Materia</td>
+        </tr>
+        <tr>
+            <td>09:00 - 10:00</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Algoritmos</td>
+        </tr>
+        <tr>
+            <td>11:00 - 13:00</td>
+            <td>Programación Orientada a Objetos</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1">
+        <tr>
+            <td>Horario</td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>07:00 - 08:30</td>
+            <td>Bases de datos</td>
+            <td>Ecuaciones Diferenciales</td>
+            <td>Electrónica Analógica</td>
+            <td>Redes de computadoras</td>
+            <td>Programación WEB</td>
+        </tr>
+        <tr>
+            <td>08:30 - 10:00</td>
+            <td>Ecuaciones Diferenciales</td>
+            <td>Programación WEB</td>
+            <td>Bases de datos</td>
+            <td>Electrónica Analógica</td>
+            <td>Diseño Digital</td>
+        </tr>
+        <tr>
+            <td>10:00 - 10:30</td>
+            <!-- Se utiliza colspan para darle mayor ancho a las celdas horizontalmente
+                Y se utiliza rowspan para abarcar más celdas verticalmente.
+                El número de celdas que se abarcaran se indica en el indice:
+                colspan="indice"||rowspan="indice"
+            -->
+            <!-- Para centrar el texto de DESCANSO se cambio <td> por <th> y lo considera como encabezado
+            -->
+            <th colspan="5" max-width="20" valign="top">
+                    <!-- 
+                    Con estos espacios, la palabra DESCANSO abarca todo el ancho de la tabla, se puede implementar
+                    CSS para evitar escribir tantos espacios con &nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    O -->
+                    DESCANSO
+            </th>
+        </tr>
+        <tr>
+            <td>10:30 - 12:00</td>
+            <td>Diseño Digital</td>
+            <td>Redes de computadoras</td>
+            <td>Programación WEB</td>
+            <td>Bases de datos</td>
+            <td>Redes de computadoras</td>
+        </tr>
+        <tr>
+            <td>12:00 - 13:30</td>
+            <td>Redes de computadoras</td>
+            <td>Diseño Digital</td>
+            <td>Ecuaciones Diferenciales</td>
+            <td>Programación WEB</td>
+            <td>Bases de datos</td>
+        </tr>
+        <tr>
+            <td>13:30 - 15:00</td>
+            <td>Electrónica Analógica</td>
+            <td>Bases de datos</td>
+            <td>Diseño Digital</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <hr/>
+    <h3>Ejercicio de tabla</h3>
+    <table border="1">
+        <tr>
+            <td>Rojo</td>
+            <td colspan="2">Verde</td>
+        </tr>
+        <tr>
+            <td>Cafe</td>
+            <td>Marron</td>
+            <td>Tinto</td>
+        </tr>
+        <tr>
+            <td colspan="3">Naranja</td>
+        </tr>
+        <tr>
+            <td colspan="2">Blanco</td>
+            <td>Negro</td>
+        </tr>
+    </table>
+</body>
+
+</html>
