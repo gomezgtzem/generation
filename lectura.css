@@ -1,0 +1,39 @@
+body{
+    background-color:rgb(206, 240, 255);
+    display: initial;
+}
+h1{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.header-text{
+text-align:right;
+}
+.comic-sans{
+    font-family: "Comic Sans MS";
+    color:red;
+}
+.contra{
+    font-family: "Contra", sans-serif;
+}
+p{
+    text-indent:50px;
+}
+.orange-text{
+    color: orange;
+    font-weight:bold;
+}
+.green-text{
+    color: green;
+    background-color:whitesmoke;
+    font-style:italic;
+}
+footer{
+    text-align: center;
+}
+.italic-foot{
+    font-style:italic;
+    font-size: 12px;
+}
+.orange-date{
+    color:orange;
+}

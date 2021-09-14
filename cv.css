@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+.title-description,
+div {
+  background-color: rgb(196, 196, 196);
+}
+h2 {
+  color: red;
+  background-color: rgb(117, 117, 117);
+}
+.blue-data {
+  color: blue;
+  font-weight: bold;
+}
+.green-data {
+  color: green;
+}
+h3 {
+  color: purple;
+  background-color: rgb(153, 153, 153);
+}
